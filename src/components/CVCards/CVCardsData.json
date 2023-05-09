@@ -1,0 +1,89 @@
+{
+  "cvCards": [
+    {
+      "id": "1",
+      "title": "GCSE",
+      "list": [
+        "ICT – A",
+        "Computer Science – B",
+        "Mathematics - B",
+        "Physics – B",
+        "English Literature – A",
+        "English Language - B"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "BTEC Level 3",
+      "list": [
+        "ICT-D* - (A* equivalent)",
+        "Engineering  - D*D* (A*A* equivalent)",
+        "Software Developer Technician – Distinction"
+      ]
+    },
+    {
+      "id": "3",
+      "title": " University of Lancaster",
+      "list": [
+        " Digital Technology Solutions: Software Development – 1st (predicted)"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Skills",
+      "list": ["Presenting", "Problem Solving", "Interpersonal Communication"]
+    },
+    {
+      "id": "5",
+      "title": "Technologies",
+      "list": [
+        "React v16",
+        "TypeScript",
+        "JavaScript",
+        "Jest",
+        "Redux",
+        "React-router",
+        "Node.js",
+        "HTML/CSS",
+        "Styled-components"
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Tools",
+      "list": ["Git/GitHub/GitLab", "Jenkins", "Jira/Confluence", "Figma"]
+    },
+    {
+      "id": "7",
+      "title": "Achievements",
+      "list": [
+        "Youngest TEDGlobal speaker",
+        "One of the World’s youngest published scientists"
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Spoken at:",
+      "list": [
+        "TEDGlobal",
+        "Cheltenham science festival",
+        "Bett Show",
+        "Science museum",
+        "ISTE conference",
+        "Education Changemakers",
+        "Cuidad de las Ideas"
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Hobbies & Interests",
+      "list": [
+        " Rock climbing",
+        " Football",
+        " Marvel Cinematic Universe",
+        " Video Games",
+        " Motorbikes"
+      ]
+    }
+  ]
+}

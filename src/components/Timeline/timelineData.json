@@ -1,0 +1,29 @@
+{
+  "Timeline": [
+    {
+      "projectTitle": "OnePortal Framework",
+      "projectDate": "2022-Present",
+      "projectDetails": "Within this project my role was to create and deliver new tools that encourage reusability across Vodafone’s development teams. This required using an internal component library, alongside creating new TypeScript components, to produce applications to pre-define standards. "
+    },
+    {
+      "projectTitle": "4um",
+      "projectDate": "2022-Present",
+      "projectDetails": "The 4um project created an internal tool that allows developers to ask and answer questions in a similar style to stack overflow. My role was to lead the frontend development by deciding project scope, mentoring developers, ensuring code quality, and working with UX designers to deliver components to a high standard."
+    },
+    {
+      "projectTitle": "Frontend Onboarding Challenge ",
+      "projectDate": "2022-2022",
+      "projectDetails": "Since joining Vodafone I noticed a lack in onboarding documentation and learning plans. To rectify this, I created a docsite aimed at junior developers that overall provides them with the knowledge required to start developing. I worked with Senior developers to create a challenge that taught the developer how to code using a specified tech-stack and in-line with Vodafone’s development standards. "
+    },
+    {
+      "projectTitle": "Enterprise Online  ",
+      "projectDate": "2018-Present",
+      "projectDetails": "This project delivered the Vodafone Business website for several different markets. My role was to be a Scrum Master and Product Owner for an internal team who oversaw the upgrade of the existing technology stack. I facilitated scrum ceremonies to ensure the team was working effectively and enabled efficient delivery by promoting transparency at all levels. Furthermore, I created user stories and defined the project scope."
+    },
+    {
+      "projectTitle": "Public Speaking  ",
+      "projectDate": "2010-2018",
+      "projectDetails": "In 2010 I become one of the world’s youngest published scientists after myself and 25 other classmates published a paper in the renowned journal, Biology Letters. We devised an experiment that questioned whether or not bees could think like humans by focusing on how they problem solved. From this I had the opportunity to present at many prestigious conferences around the world. In my talks I mainly focused on how to get girls into STEM subjects and highlighted the bias’s present within these subjects. "
+    }
+  ]
+}
