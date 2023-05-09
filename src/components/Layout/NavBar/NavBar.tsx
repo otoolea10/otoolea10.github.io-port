@@ -24,6 +24,20 @@ const NavBar = ({ drawerToggleClicked }: NavBarProps) => {
         <nav>
           {/*Display site's title*/}
           <h1>A.O'Toole</h1>
+          <ul>
+            <li>
+              <NavLink to="/home">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/cv">CV</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about">About</NavLink>
+            </li>
+            <li>
+              <NavLink to="/projects">Projects</NavLink>
+            </li>
+          </ul>
         </nav>
       </div>
     </NavBarStyles>
