@@ -3,7 +3,10 @@ import HeroBanner from "../../components/HeroBanner/HeroBanner";
 import Stone from "../../../public/assets/images/backgrounds/stone-background.jpg";
 import SkinnyBanner from "../../components/SkinnyBanner/SkinnyBanner";
 import AboutStyles from "./AboutStyles";
+import { useUserQuery } from "../../store/githubApi";
+import GithubCalendar from "react-github-calendar";
 const About = () => {
+  const { data, isLoading, isError } = useUserQuery("otoolea10");
   return (
     <AboutStyles>
       <HeroBanner heroBannerImage={Stone} heroBannerText="About Me" />
@@ -29,8 +32,14 @@ const About = () => {
           audience size and knowledge on subject matters.
         </p>
       </div>
-
       <SkinnyBanner bannerHeading="GitHub Contributions" />
+      {!!data && !isLoading && (
+        <div className="github-container">
+          <img src={data.avatar_url} />
+          <h3>Username: {data.login}</h3>
+        </div>
+      )}{" "}
+      <GithubCalendar username={"otoolea10"} colorScheme="light" />
     </AboutStyles>
   );
 };
