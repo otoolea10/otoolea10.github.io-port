@@ -49,8 +49,9 @@ const GameCard = () => {
               .start();
           }}
         />
-        <PathSelector />
       </div>
+
+      <PathSelector />
     </GameCardStyles>
   );
 };

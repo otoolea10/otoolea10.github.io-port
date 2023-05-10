@@ -6,16 +6,16 @@ const HomeStyles = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 100vw;
-  height: 90vh;
+  width: 100%;
+  height: 100vh;
   img {
     display: block;
     margin: auto;
-    width: 60vw;
-    height: 100%;
+    width: 53em;
+    height: 33em;
   }
   .title-container {
-    transform: translateY(-70vh);
+    transform: translateY(-30em);
     z-index: 999;
     color: white;
   }

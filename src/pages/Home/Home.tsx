@@ -10,7 +10,7 @@ const Home = () => {
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Enter") {
-        navigate("/portfolio");
+        navigate("/routes");
       }
     };
     document.addEventListener("keydown", handleKeyDown);

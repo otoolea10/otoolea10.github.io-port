@@ -5,8 +5,8 @@ const GameCardStyles = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 100vw;
-  height: 90vh;
+  width: 100%;
+  height: 100vh;
 
   .square {
     padding-top: 5rem;
@@ -18,7 +18,7 @@ const GameCardStyles = styled.div`
   .question-container {
     transform: translateY(-30em);
     margin: auto;
-    width: 50vw;
+    width: 50em;
     z-index: 999;
     color: white;
     padding: 0 2rem;

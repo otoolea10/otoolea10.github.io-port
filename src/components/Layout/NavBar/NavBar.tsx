@@ -29,6 +29,9 @@ const NavBar = ({ drawerToggleClicked }: NavBarProps) => {
               <NavLink to="/home">Home</NavLink>
             </li>
             <li>
+              <NavLink to="/routes">Routes</NavLink>
+            </li>
+            <li>
               <NavLink to="/cv">CV</NavLink>
             </li>
             <li>

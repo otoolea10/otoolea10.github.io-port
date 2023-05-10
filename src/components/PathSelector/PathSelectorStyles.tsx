@@ -2,9 +2,11 @@ import styled from "styled-components";
 
 const PathSelectorStyles = styled.div`
   display: grid;
-  width: 50vw;
+  width: 30vw;
   grid-template-columns: 5vw 7vw 5vw 7vw 5vw;
-  transform: translateX(10vw);
+  color: white;
+  margin: auto;
+  transform: translateY(-30em);
   img {
     cursor: pointer;
     height: 50px !important;

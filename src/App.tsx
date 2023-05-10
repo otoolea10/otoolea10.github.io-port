@@ -16,7 +16,7 @@ function App(): ReactElement {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/portfolio" element={<GameCard />} />
+          <Route path="/routes" element={<GameCard />} />
           <Route path="/mystery" element={<Mystery />} />{" "}
           <Route path="/projects" element={<Projects />} />
           <Route path="/cv" element={<CV />} />

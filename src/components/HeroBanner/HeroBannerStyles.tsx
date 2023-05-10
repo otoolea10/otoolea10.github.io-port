@@ -9,7 +9,7 @@ const HeroBannerStyles = styled.div`
     color: #4d5866;
     font-size: 70px;
     margin: auto;
-    transform: translateY(-20vh);
+    transform: translateY(-2.3em);
     text-align: center;
   }
   & p {
