@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const CVCardStyles = styled.div`
   background-color: #6d8294;
-  margin: 3rem auto;
+  margin: 1rem auto 4rem auto;
   width: 400px;
   height: 17em;
   padding: 1rem;

@@ -16,17 +16,21 @@ const Timeline = ({ items }: TimelineProps) => {
   // const items = timelineData.Timeline;
   return (
     <TimelineStyles>
-      <VerticalTimeline>
+      <VerticalTimeline lineColor={"#4D5866"}>
         {items.map(({ projectTitle, projectDate, projectDetails }) => (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             key={projectDate}
-            contentStyle={{ background: "rgb(77, 88, 102)", color: "#fff" }}
+            contentStyle={{
+              background: "white",
+              color: "black",
+              borderTop: "5px solid #4D5866",
+            }}
             contentArrowStyle={{
-              borderRight: "10px solid  rgb(255, 255, 255)",
+              borderRight: "10px solid  #4D5866",
             }}
             date={projectDate}
-            iconStyle={{ background: "rgb(77, 88, 102)", color: "#fff" }}
+            iconStyle={{ background: "#4D5866", color: "#4D5866" }}
           >
             <h4 className="vertical-timeline-element-subtitle">
               {projectTitle}

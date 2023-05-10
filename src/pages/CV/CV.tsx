@@ -2,11 +2,11 @@ import React from "react";
 import CVCards from "../../components/CVCards/CVCards";
 import SkinnyBanner from "../../components/SkinnyBanner/SkinnyBanner";
 import HeroBanner from "../../components/HeroBanner/HeroBanner";
-import Mountains from "../../../public/assets/images/backgrounds/mountains.jpg";
+import Gradient from "../../../public/assets/images/backgrounds/gradient-background.png";
 const CV = () => {
   return (
     <>
-      <HeroBanner heroBannerHeading="CV" heroBannerImage={Mountains} />
+      <HeroBanner heroBannerHeading="CV" heroBannerImage={Gradient} />
       <SkinnyBanner bannerHeading="Education" />
       <CVCards cvCardDataStart={0} cvCardDataEnd={3} />
       <SkinnyBanner bannerHeading="Skills" />

@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 const ProjectsStyles = styled.div`
-  background-color: hsl(207, 9%, 75%);
+  h1 {
+    //font-size: 30px;
+    //transform: translateY(-30em);
+  }
 `;
 export default ProjectsStyles;

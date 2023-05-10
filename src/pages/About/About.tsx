@@ -2,6 +2,7 @@ import React from "react";
 import HeroBanner from "../../components/HeroBanner/HeroBanner";
 import Stone from "../../../public/assets/images/backgrounds/stone-background.jpg";
 import SkinnyBanner from "../../components/SkinnyBanner/SkinnyBanner";
+import Line from "../../../public/assets/images/backgrounds/line-background.png";
 import AboutStyles from "./AboutStyles";
 import { useUserQuery } from "../../store/githubApi";
 import GithubCalendar from "react-github-calendar";
@@ -9,8 +10,8 @@ const About = () => {
   const { data, isLoading, isError } = useUserQuery("otoolea10");
   return (
     <AboutStyles>
-      <HeroBanner heroBannerImage={Stone} heroBannerText="About Me" />
-      <SkinnyBanner bannerHeading="About" />
+      <HeroBanner heroBannerImage={Line} heroBannerHeading="About Me" />
+      <SkinnyBanner bannerHeading="Overview" />
       <div className="text-container">
         <p>
           I am a passionate Software Developer and Scrum Master with 4+ years of
@@ -36,9 +37,9 @@ const About = () => {
       {!!data && !isLoading && (
         <div className="github-container">
           <img src={data.avatar_url} />
-          <h3>Username: {data.login}</h3>
+          <h2>{data.login}</h2>
         </div>
-      )}{" "}
+      )}
       <GithubCalendar username={"otoolea10"} colorScheme="light" />
     </AboutStyles>
   );
