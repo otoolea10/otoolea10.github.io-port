@@ -9,6 +9,7 @@ const GameCardStyles = styled.div`
   height: 90vh;
 
   .square {
+    padding-top: 5rem;
     display: block;
     margin: auto;
     width: 53em;

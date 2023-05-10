@@ -6,7 +6,11 @@ const PathSelectorStyles = styled.div`
   grid-template-columns: 5vw 7vw 5vw 7vw 5vw;
   transform: translateX(10vw);
   img {
+    cursor: pointer;
     height: 50px !important;
+  }
+  h2 {
+    cursor: pointer;
   }
   .up-arrow {
     text-align: center;
