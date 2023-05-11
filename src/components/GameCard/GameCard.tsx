@@ -32,7 +32,7 @@ const GameCard = () => {
   }, []);
   return (
     <GameCardStyles>
-      <img src={square} className="square" />
+      <img src={square} className="square" alt="game-card" />
       <div className="question-container">
         <Typewriter
           options={{ delay: 25, cursor: ">" }}

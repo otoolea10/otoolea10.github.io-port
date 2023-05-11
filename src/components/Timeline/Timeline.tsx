@@ -22,7 +22,7 @@ const Timeline = ({ items }: TimelineProps) => {
             className="vertical-timeline-element--work"
             key={projectDate}
             contentStyle={{
-              background: "white",
+              background: "#F9F9F9",
               color: "black",
               borderTop: "5px solid #4D5866",
             }}

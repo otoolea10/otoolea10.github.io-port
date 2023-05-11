@@ -5,6 +5,9 @@ const AboutStyles = styled.div`
     font-size: 22px;
     margin: 1rem 10% 5rem 10%;
   }
+  p {
+    font-family: "Alegreya Sans";
+  }
   .github-container {
     display: flex;
     justify-content: center;

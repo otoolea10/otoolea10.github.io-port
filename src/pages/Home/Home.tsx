@@ -21,7 +21,7 @@ const Home = () => {
 
   return (
     <HomeStyles>
-      <img src={square} />
+      <img src={square} alt="title-container" />
       <div className="title-container">
         <Typewriter
           options={{ delay: 25, cursor: ">" }}
