@@ -4,9 +4,12 @@ import Typewriter from "typewriter-effect";
 import PathSelector from "../PathSelector/PathSelector";
 import GameCardStyles from "./GameCardStyles";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { increment } from "../../store/counterSlice";
 
 const GameCard = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -19,6 +22,7 @@ const GameCard = () => {
           break;
         case "ArrowDown":
           navigate("/mystery");
+          dispatch(increment());
           break;
         case "ArrowLeft":
           navigate("/cv");
@@ -41,16 +45,15 @@ const GameCard = () => {
               .typeString(
                 "<h2>You find yourself in a clearing. There are 4 paths in front of you which way would you like to go?</h2>"
               )
-              .pauseFor(500)
+              .pauseFor(250)
               .start();
             typewriter
               .typeString("<h3>(Hint: Use keyboard arrow keys) </h3>")
-              .pauseFor(500)
+              .pauseFor(250)
               .start();
           }}
         />
       </div>
-
       <PathSelector />
     </GameCardStyles>
   );

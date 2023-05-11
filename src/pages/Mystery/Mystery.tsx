@@ -4,7 +4,13 @@ import Typewriter from "typewriter-effect";
 import MysteryData from "./MysteryData.json";
 import MysteryStyles from "./MysteryStyles";
 import { useNavigate } from "react-router-dom";
-const Mystery = () => {
+import { connect } from "react-redux";
+import { RootState } from "../../store/store";
+
+interface MysteryProps {
+  deathCounter: number;
+}
+const Mystery = ({ deathCounter }: MysteryProps) => {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -20,6 +26,9 @@ const Mystery = () => {
   }, [navigate]);
   return (
     <MysteryStyles>
+      <div className="death-counter">
+        <p>Death Toll: {deathCounter}</p>
+      </div>
       <img src={square} alt="mystery-square" />
       <div className="text-container">
         <Typewriter
@@ -36,4 +45,7 @@ const Mystery = () => {
     </MysteryStyles>
   );
 };
-export default Mystery;
+const mapStateToProps = (state: RootState) => ({
+  deathCounter: state.counter.count
+});
+export default connect(mapStateToProps)(Mystery);
