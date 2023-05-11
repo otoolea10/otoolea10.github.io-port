@@ -11,7 +11,7 @@ const HeroBanner = ({
   heroBannerHeading,
   heroBannerText,
   heroBannerImage,
-  heroBannerClass,
+  heroBannerClass
 }: HeroBannerProps) => {
   return (
     <HeroBannerStyles className={heroBannerClass}>

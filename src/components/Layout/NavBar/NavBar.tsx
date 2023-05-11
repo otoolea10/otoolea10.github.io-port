@@ -2,28 +2,17 @@ import React from "react";
 import NavBarStyles from "./NavBarStyles";
 import { NavLink } from "react-router-dom";
 import Logo from "../../Logo/Logo";
-import DrawerToggle from "../DrawerToggle/DrawerToggle";
 
-interface NavBarProps {
-  drawerToggleClicked?: () => void;
-}
-
-const NavBar = ({ drawerToggleClicked }: NavBarProps) => {
+const NavBar = () => {
   return (
     <NavBarStyles>
-      <div>
-        {/*Display Logo top right */}
-        <Logo className="nav-logo" />
-        {/*When screen size is less than 767px then show Mobile toolbar with hamburger icon */}
-        <nav>
-          <DrawerToggle clicked={drawerToggleClicked} />
-        </nav>
-      </div>
-      {/*When screen size is greater than 767px then show Desktop toolbar */}
+      {/*Display Logo top right */}
+      <Logo className="nav-logo" />
+
       <div className="desktop-nav">
         <nav>
           {/*Display site's title*/}
-          <h1>A.O'Toole</h1>
+          <h1>A.O&apos;Toole</h1>
           <ul>
             <li>
               <NavLink to="/home">Home</NavLink>

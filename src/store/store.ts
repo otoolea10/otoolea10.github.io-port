@@ -5,12 +5,11 @@ import { githubApi } from "./githubApi";
 export const store = configureStore({
   reducer: {
     // Add the generated reducer as a specific top-level slice
-    [githubApi.reducerPath]: githubApi.reducer,
+    [githubApi.reducerPath]: githubApi.reducer
   },
   // Adding the api middleware enables caching, invalidation, polling,
   // and other useful features of `rtk-query`.
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(githubApi.middleware),
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(githubApi.middleware)
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself

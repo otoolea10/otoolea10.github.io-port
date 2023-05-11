@@ -17,7 +17,7 @@ const Home = () => {
     return function cleanup() {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, []);
+  }, [navigate]);
 
   return (
     <HomeStyles>
@@ -29,14 +29,8 @@ const Home = () => {
             typewriter.typeString("<h1>Amy O'Toole</h1>").pauseFor(500).start();
             typewriter.typeString("<h2>Biker</h2>").pauseFor(500).start();
             typewriter.typeString("<h2>Gamer</h2>").pauseFor(500).start();
-            typewriter
-              .typeString("<h2>Software Engineer</h2>")
-              .pauseFor(500)
-              .start();
-            typewriter
-              .typeString("<h2>Press [Enter] to start </h2>")
-              .pauseFor(500)
-              .start();
+            typewriter.typeString("<h2>Software Engineer</h2>").pauseFor(500).start();
+            typewriter.typeString("<h2>Press [Enter] to start </h2>").pauseFor(500).start();
           }}
         />
       </div>

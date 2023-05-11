@@ -29,7 +29,7 @@ const GameCard = () => {
     return function cleanup() {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, []);
+  }, [navigate]);
   return (
     <GameCardStyles>
       <img src={square} className="square" alt="game-card" />

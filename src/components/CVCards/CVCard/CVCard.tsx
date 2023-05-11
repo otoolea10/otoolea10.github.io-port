@@ -13,7 +13,7 @@ const CVCard = ({ title, list }: CVCardProps) => {
         <h3>{title}</h3>
         <ul>
           {list.map((text) => (
-            <li>{text}</li>
+            <li key={text}>{text}</li>
           ))}
         </ul>
       </div>

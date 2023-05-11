@@ -14,15 +14,15 @@ export interface AuthResponse {
 export const githubApi = createApi({
   reducerPath: "auth",
   baseQuery: fetchBaseQuery({ baseUrl: "https://api.github.com" }),
-  serializeQueryArgs: ({ queryArgs }) => "user",
+  serializeQueryArgs: () => "user",
   endpoints: (builder) => ({
     user: builder.query<AuthResponse, string>({
       query: (queries) => ({
         url: `/users/${queries}`,
-        method: "GET",
-      }),
-    }),
-  }),
+        method: "GET"
+      })
+    })
+  })
 });
 
 // Export hooks for usage in functional components, which are

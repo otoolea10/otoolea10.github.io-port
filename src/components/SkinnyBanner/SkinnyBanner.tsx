@@ -1,3 +1,4 @@
+import React from "react";
 import SkinnyBannerStyles from "./SkinnyBannerStyles";
 
 interface SkinnyBannerProps {

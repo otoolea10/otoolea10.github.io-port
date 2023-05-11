@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import square from "../../../public/assets/images/backgrounds/square.svg";
 import Typewriter from "typewriter-effect";
 import MysteryData from "./MysteryData.json";
@@ -17,24 +17,19 @@ const Mystery = () => {
     return function cleanup() {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, []);
+  }, [navigate]);
   return (
     <MysteryStyles>
-      <img src={square} />
+      <img src={square} alt="mystery-square" />
       <div className="text-container">
         <Typewriter
           options={{ delay: 25, cursor: ">" }}
           onInit={(typewriter) => {
             typewriter
-              .typeString(
-                `${MysteryData[Math.floor(Math.random() * MysteryData.length)]}`
-              )
+              .typeString(`${MysteryData[Math.floor(Math.random() * MysteryData.length)]}`)
               .pauseFor(500)
               .start();
-            typewriter
-              .typeString("<p>Press [Enter] to return home </p>")
-              .pauseFor(500)
-              .start();
+            typewriter.typeString("<p>Press [Enter] to return home </p>").pauseFor(500).start();
           }}
         />
       </div>

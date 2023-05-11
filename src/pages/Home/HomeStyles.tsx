@@ -18,6 +18,8 @@ const HomeStyles = styled.div`
     transform: translateY(-30em);
     z-index: 999;
     color: white;
+    width: 50em;
+    margin: auto;
   }
   h1 {
     font-size: 70px;

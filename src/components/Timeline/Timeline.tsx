@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import TimelineStyles from "./TimelineStyles";
 interface TimelineProps {
@@ -24,17 +21,15 @@ const Timeline = ({ items }: TimelineProps) => {
             contentStyle={{
               background: "#F9F9F9",
               color: "black",
-              borderTop: "5px solid #4D5866",
+              borderTop: "5px solid #4D5866"
             }}
             contentArrowStyle={{
-              borderRight: "10px solid  #4D5866",
+              borderRight: "10px solid  #4D5866"
             }}
             date={projectDate}
             iconStyle={{ background: "#4D5866", color: "#4D5866" }}
           >
-            <h4 className="vertical-timeline-element-subtitle">
-              {projectTitle}
-            </h4>
+            <h4 className="vertical-timeline-element-subtitle">{projectTitle}</h4>
             <p>{projectDetails}</p>
           </VerticalTimelineElement>
         ))}

@@ -12,7 +12,7 @@ const CVCards = ({ cvCardDataStart, cvCardDataEnd }: CVCardsProps) => {
   return (
     <CVCardsStyles>
       {cvCardsData.cvCards.slice(cvCardDataStart, cvCardDataEnd).map((card) => (
-        <CVCard key={1} {...card} />
+        <CVCard key={card.id} {...card} />
       ))}
     </CVCardsStyles>
   );
